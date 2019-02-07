@@ -3,10 +3,18 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
 body {
   margin: 0;
   color: #27272b;
   background-color: #e0e0e5;
+}
+.achtergrond-donker {
+  width: 100%;
+  height: 55vh;
+  background-color: #2e2e30;
 }
 
 .nav {
@@ -102,6 +110,40 @@ body {
   }
 }
 
+/* round image */
+
+.round-image-container {
+  height: 20rem;
+  width: 20rem;
+  /* position: absolute; */
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: contain;
+  text-align: center;
+  opacity: 0.7;
+}
+
+
+.round-image-container p {
+  font-size: 4rem;
+  color: white;
+  padding-top: 7rem;
+  /* position: relative; */
+  /* top: 20%; */
+}
+
+.round-image-container:hover{
+  opacity: 1;
+}
+
+.round-image-flex{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
 /* banner */
 
 .text-container{
@@ -140,6 +182,37 @@ body {
 
 }
 
+.page-banner{
+  max-width: 100%;
+  height: 100vh;
+  background: url(images/roze_donker.png) center;
+  background-size: cover;
+}
+.darken-pseudo {
+  position: relative;
+}
+
+.darken-pseudo:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* display: block; */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.darken-with-text h1 {
+  margin: 0;
+  font-size: 4em;
+  text-align: center;
+  color: white;
+  padding-top: 300px;
+  position: relative;
+  z-index: 1;
+}
+
 
 .slider {
   max-width: 100%;
@@ -151,6 +224,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .slide1 {
   background: url(images/spiegel.jpeg)no-repeat center;
       background-size: cover;
@@ -195,7 +269,69 @@ body {
 
 
 /*buttons  */
-#circle {
+
+.button-container{
+
+
+    z-index: 999;
+    height:100%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn {
+    margin-top: calc(50% + 25px);
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    font-size:17px;
+    letter-spacing: 0.045em;
+}
+
+.btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn svg rect {
+    //stroke: #EC0033;
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.btn span{
+  background: rgb(255,130,130);
+  background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+  background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+/* #circle {
   margin: 0 auto;
   margin-top: 100px;
   border-radius: 50%;
@@ -241,7 +377,7 @@ a {
   -webkit-transition: line-height 0.3s;
   -moz-transition: line-height 0.3s;
   -o-transition: line-height 0.3s;
-}
+} */
 
 
 
@@ -258,6 +394,10 @@ a {
   margin: 10px;
   background-color: #f2f2f7;
   color: #27272b;
+}
+
+.image-container a {
+text-decoration: none;
 }
 .image-container:hover{
     box-shadow: 13px 15px 5px 0px rgba(51,51,51,1);

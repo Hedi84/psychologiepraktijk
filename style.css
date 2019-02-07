@@ -13,7 +13,7 @@ body {
 }
 .achtergrond-donker {
   width: 100%;
-  height: 55vh;
+  height: auto;
   background-color: #2e2e30;
 }
 
@@ -122,6 +122,8 @@ body {
   background-image: contain;
   text-align: center;
   opacity: 0.7;
+  margin-bottom: 4rem;
+  border: solid 2px white;
 }
 
 
@@ -129,6 +131,7 @@ body {
   font-size: 4rem;
   color: white;
   padding-top: 7rem;
+
   /* position: relative; */
   /* top: 20%; */
 }
@@ -138,11 +141,15 @@ body {
 }
 
 .round-image-flex{
+  width: 100%;
+  /* height: auto; */
+  background-color: #2e2e30;
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
+  /* flex-direction: row; */
+  align-items: flex-start;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 /* banner */
 
@@ -271,12 +278,10 @@ body {
 /*buttons  */
 
 .button-container{
-
-
     z-index: 999;
-    height:100%;
+    height:20rem;
     position: absolute;
-    top: 90%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

@@ -221,7 +221,7 @@ body {
   font-size: 2em;
   text-align: center;
   color: white;
-  padding-top: 300px;
+  padding-top: 350px;
   position: relative;
   z-index: 1;
 }
@@ -244,6 +244,7 @@ body {
 }
 
 .text-container p {
+  padding-top: 2rem;
   font-size: 3rem;
 }
 
@@ -428,21 +429,13 @@ text-decoration: none;
     font-size: 24px;
   }
 
-.text-image-container {
-  /* width: 600px;
-  height: auto; */
-}
+
 
 .text-image {
   width: 60rem;
   height: auto;
-
 }
-.text-image-small {
-  width: 30rem;
-  height: auto;
 
-}
 
 .text-field {
   /* width: 600px; */

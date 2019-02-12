@@ -4,31 +4,41 @@
     <link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="nav">
-      <div class="nav-header">
-        <div class="nav-title">
-          <a href="#top">
-            <img src="images/white-logo.png" alt="" style="height: 30px; width: 30px">
-          </a>
+    <div class="navbar-wagon">
+      <!-- Logo -->
+      <a href="" class="navbar-wagon-brand">
+        <i class="fa fa-home" style="font-size:48px;"></i>
+      </a>
+
+      <!-- Right Navigation -->
+      <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+        <a href="#contact" class="navbar-wagon-item navbar-wagon-link">De Praktijk & Contact</a>
+        <a href="#voorwie" class="navbar-wagon-item navbar-wagon-link">Voor Wie?</a>
+        <a href="#aanmelding" class="navbar-wagon-item navbar-wagon-link">Aanmelding & Intake</a>
+        <a href="#betaling" class="navbar-wagon-item navbar-wagon-link">Betaling</a>
+        <a href="#overmij" class="navbar-wagon-item navbar-wagon-link">Over Mij</a>
+        <a href="#psychotherapie" class="navbar-wagon-item navbar-wagon-link">Psychotherapie</a>
+        <a href="#bewegingstherapie" class="navbar-wagon-item navbar-wagon-link">Bewegingstherapie</a>
+        <a href="#adoptie" class="navbar-wagon-item navbar-wagon-link">Adoptie</a>
+      </div>
+
+      <!-- Dropdown appearing on mobile only -->
+      <div class="navbar-wagon-item hidden-md hidden-lg">
+        <div class="dropdown">
+          <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li><a href="#">Host</a></li>
+            <li><a href="#">Trips</a></li>
+            <li><a href="#">Messagese</a></li>
+          </ul>
         </div>
-      </div>
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-      <input type="checkbox" id="nav-check">
-      <div class="nav-links">
-        <a href="#contact">De Praktijk en Contact</a>
-        <a href="#voorwie">Voor Wie?</a>
-        <a href="#aanmelding">Aanmelding en Intake</a>
-        <a href="#psychotherapie">Therapievormen</a>
-        <a href="#betaling">Betaling en Vergoeding</a>
-        <a href="#overmij">Over Mij</a>
       </div>
     </div>
 
@@ -65,7 +75,7 @@
         </a>
         <a href="#contact">
           <div class="round-image-container" style="background-image: url(images/contact2.jpeg);">
-            <p>De Praktijk</p>
+            <p id="verder">De Praktijk</p>
           </div>
         </a>
       </div>
@@ -74,7 +84,7 @@
 
 
 
-    <div class='slider' id="verder" >
+    <div class='slider'  >
 
       <div class='slide1'>
         <div class="text-block-banner">
@@ -278,7 +288,7 @@ Voor 2019 heeft de praktijk een contract afgesloten met DSW... </p>
       <p>Ik ben BIG geregistreerd psychotherapeut en je kunt bij mij terecht voor integratieve psychotherapeutische behandelingen. Dat betekent in praktijk dat ik geen standaard behandelmethode hanteer, maar dat ik samen met jou als cliënt kijk wat er bij jou past.</p>
       <div id="bewegingstherapie"></div>
       <p>In een psychotherapeutische behandeling kijken we samen naar wie jij bent geworden als persoon en hoe jouw verleden hier invloed op heeft gehad. Dit is belangrijk omdat de wijze waarop we de wereld zien, doorwerkt in hoe we omgaan met situaties die we in het leven tegenkomen. Soms zijn de manieren die we eerder in ons leven hebben ontwikkeld om problemen te hanteren, na verloop van tijd niet meer helpend en kunnen zij zelfs bijdragen aan het ontstaan en blijven bestaan van psychische klachten. In therapie proberen we hier zicht op te krijgen om vervolgens een veranderingsproces in gang te zetten, waarbij het doel is dat je minder klachten gaat ervaren. Soms zal dit een korter traject zijn, maar het traject kan ook langer duren.</p>
-      <div class="header"><h1>Bewegingstherapie</h1></div>
+      <div class="header"><h1>Bewegingstherapie</h1></div><br>
       <p>Soms zijn psychische klachten zo diep ingesleten dat deze met alleen psychotherapie moeilijk veranderbaar zijn. Ik werk daarom regelmatig samen met mijn college Michelle Kurzenacker.  Zij is dans- en bewegingstherapeut en in opleiding tot sensori-motor therapeut. Via beweging en lichaamsbewustzijn kunnen veranderingen sneller en vollediger plaatsvinden. Voor meer informatie over de therapieen die Michelle geeft, zie haar website <a href="www.movedby.net">movedby</a>.</p>
     </div>
   </div>

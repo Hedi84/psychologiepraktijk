@@ -20,99 +20,87 @@ body {
 
 /* navbar */
 
-.nav {
-  font-family: 'segoe ui';
-  height: 6vh;
+/* Main navbar */
+.navbar-wagon {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: #2e2e30;
+  transition: all 0.3s ease;
+  height: 60px;
   width: 100%;
-  color: white ;
-  background-color: #2e2e30;
-  position: relative;
-  z-index: 999999;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
+  z-index: 999999999;
 }
 
-.nav > .nav-header {
-  display: inline;
+.navbar-wagon i {
+  color: #cbcbd8;
 }
 
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px 10px 10px 10px;
-}
-
-.nav > .nav-btn {
-  display: none;
-}
-
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 10px 13px 10px;
-  text-decoration: none;
+.navbar-wagon i:hover {
   color: white;
 }
-
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+/* Logo */
+.navbar-wagon-brand img {
+  height: 50px;
 }
 
-.nav > #nav-check {
-  display: none;
+
+/* Right section */
+.navbar-wagon-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@media (max-width:600px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) + .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked + .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
+/* Basic navbar item */
+.navbar-wagon-item {
+  cursor: pointer;
+  padding: 0 20px;
 }
 
+/* Navbar link */
+.navbar-wagon-link {
+  color: #cbcbd8;
+  font-size: 14px;
+}
+.navbar-wagon-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Dropdown menu */
+.navbar-wagon-dropdown-menu {
+  margin-top: 15px;
+  box-shadow: 1px 1px 4px #E6E6E6;
+  border-color: #E6E6E6;
+}
+.navbar-wagon-dropdown-menu li > a {
+  transition: color 0.3s ease;
+  font-weight: lighter !important;
+  color: #999999 !important;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  padding: 10px 20px;
+}
+.navbar-wagon-dropdown-menu li > a:hover {
+  background: transparent !important;
+  color: black !important;
+}
+.navbar-wagon-dropdown-menu:before {
+  content: ' ';
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 10px;
+  top: -6px;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid #E6E6E6;
+  border-top: 1px solid #E6E6E6;
+}
 /* round image */
 
 .round-image-container {
@@ -138,7 +126,6 @@ body {
 
 .round-image-container:hover{
   opacity: 1;
-  border: solid 4px white;
 }
 
 .round-image-flex{
@@ -364,7 +351,13 @@ body {
     stroke-dashoffset: 437;
 }
 
+.button-dropdown {
+  background-color: #2e2e30;
+}
 
+.button-dropdown p {
+  color: #cbcbd8;
+}
 /* text and image section  */
 
 .image-class {

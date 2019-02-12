@@ -60,7 +60,12 @@ body {
   cursor: pointer;
   padding: 0 20px;
 }
-
+.navbar-wagon-item i {
+  color: #cbcbd8;
+  font-size: 30px;
+  font-family:'FontAwesome'!important;
+  text-decoration: none;
+}
 /* Navbar link */
 .navbar-wagon-link {
   color: #cbcbd8;
@@ -100,6 +105,10 @@ body {
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+.dropdown-menu {
+    width: 225px !important;
 }
 /* round image */
 

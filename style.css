@@ -438,6 +438,12 @@ text-decoration: none;
   height: auto;
 }
 
+.text-image2 {
+  width: 70rem;
+  height: 70rem;
+  object-fit: contain;
+}
+
 
 .text-field {
   /* width: 600px; */
